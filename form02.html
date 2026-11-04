@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Guia de requerimento</h1>
+    </header>
+    
+    <hr>
+
+    <main>
+
+        <form action="">
+            
+            <label>
+                Protocolo n.°
+                <input type="number" name="protocol_number" required>
+            </label>
+
+            <fieldset>
+                
+                <label>
+                    Requerente:
+                    <input type="text" name="requerente" required>
+                </label>
+                <label>
+                    N° DE MATRICULA:
+                    <input type="number" name="number_matricula" required>
+                </label>
+                <hr>
+                <label>
+                    DATA NASCIMENTO:
+                    <input type="date" name="data_nascimento" required>
+                </label>
+                <label>
+                    NATURALIDADE:
+                    <select name="naturalidade" required>
+                        <optgroup>
+                            <legend>CEARÁ</legend>
+
+                            <option value="CEDRO/CE">CEDRO/CE</option>
+                            <option value="IGUATU/CE">IGUATU/CE</option>
+                            <option value="ICÓ/CE">ICÓ/CE</option>
+                            <option value="JUAZEIRO_DO_NORTE/CE">JUAZEIRO DO NORTE/CE</option>
+                            <option value="VARZEA_ALEGRE/CE">VARZEA ALEGRE/CE</option>
+                        </optgroup>
+                        
+                    </select>
+                </label>
+                
+                <br>
+
+                <label>
+                    FILIAÇÃO:
+                    <input type="text" name="filiacao">
+                </label>
+                <hr>
+
+                <label>
+                    CURSO:
+                    <select name="curso" required>
+                        <option value="">SELECIONE O SEU CURSO</option>
+                        <optgroup>
+                            <legend>CURSOS TÉCNICOS</legend>
+
+                            <option value="TEC_INFORMATICA">TÉCNICO EM INFORMÁTICA</option>
+                            <option value="TEC_ELETRICA">ELETROTÉCNICA</option>
+                            <option value="TEC_MECANICA">TÉCNICO EM MECÂNICA</option>
+                        </optgroup>
+
+                        <optgroup>
+                            <legend>ENSINO SUPERIOR</legend>
+
+                            <option value="SISTEMAS_INFORMAÇÃO">BACHARELADO EM SISTEMAS DE INFORMAÇÃO</option>
+                            <option value="SISTEMAS_INFORMAÇÃO">BACHARELADO EM SISTEMAS DE INFORMAÇÃO</option>
+                            <option value="LICENCIATURA_FISICA">LICENCIATURA EM FÍSICA</option>
+                            <option value="ENGENHARIA_ELETRICA">ENGENHARIA ELÉTRICA</option>
+                            <option value="ENGENHARIA_MECANICA">ENGENHARIA MECÂNICA</option>
+                        </optgroup>
+                        
+                    </select>
+                </label>
+
+                <label>
+                    PERÍODO
+
+                    <input type="text" name="PERIODO" required>
+                </label>
+
+                <label>
+                    TURNO:
+                    <select name="TURNO" required>
+                        <option value="">SELECIONE O SEU TURNO</option>
+                        <option value="MANHA">MANHÃ</option>
+                        <option value="TARDE">TARDE</option>
+                        <option value="INTEGRAL">INTEGRAL</option>
+                        <option value="NOITE">NOITE</option>  
+                    </select>
+                </label>
+
+                <br>
+
+                <label>
+                    TELEFONE:
+                    <input type="tel" name="TELEFONE">
+                </label>
+
+                <label>
+                    E-MAIL:
+                    <input type="email" name="E-MAIL">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                
+                <fieldset>
+                    <legend>ASSINALE:</legend>
+
+                    <label>
+                        <input type="checkbox" name="ACAO" value="2_via">
+                        01| 2° Via(especificar) |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Aproveitamento_de_Disciplina">
+                        02| Aproveitamento de Disciplina(anezar Histórico Escolar e Programa da Disciplina) |Coordenação do curso
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Matricula_fora_do_prazo">
+                        03| Matricula fora do prazo (justificar) |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Cancelamento_da_Matricula">
+                        04| Cancelamento da Matrícula |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Colação_de_Grau">
+                        05| Colação de Grau/ Coleção Espacial |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Declaracao">
+                        06| Declaração (especificar) |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Diploma">
+                        07| Diploma (especificar) |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Historico_Escolar">
+                        08| Histórico Escolar |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Reabertura_de_Matricula">
+                        09| Reabertura de Matrícula |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Diploma">
+                        10| Segunda Chamada(anexar justificativa e especificar) |Coordenação do Curso
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Diploma">
+                        11| Reingresso |CCA
+                    </label>
+                    <br>
+
+                </fieldset>
+
+                
+            </fieldset>
+
+        </form>
+
+    </main>
+    
+</body>
+</html>
