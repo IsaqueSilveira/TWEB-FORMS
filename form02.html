@@ -6,15 +6,12 @@
     <title>Form</title>
 </head>
 <body>
-
     <header>
         <h1>Guia de requerimento</h1>
     </header>
-    
     <hr>
 
     <main>
-
         <form action="">
             
             <label>
@@ -167,21 +164,150 @@
                     </label>
                     <br>
                     <label>
-                        <input type="checkbox" name="ACAO" value="Diploma">
+                        <input type="checkbox" name="ACAO" value="Segunda_Chamada">
                         10| Segunda Chamada(anexar justificativa e especificar) |Coordenação do Curso
                     </label>
                     <br>
                     <label>
-                        <input type="checkbox" name="ACAO" value="Diploma">
+                        <input type="checkbox" name="ACAO" value="Reingresso">
                         11| Reingresso |CCA
                     </label>
                     <br>
-
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Trancamento_de_Disciplina">
+                        12| Trancamento de Disciplina(especificar) |Coordenação dos Cursos
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Trancamento_de_Matricula">
+                        13| Trancamento de Mátricula(anexar documentação comprobatória) |Coordenação dos Pedagógica
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Transferencia_Instituicao">
+                        14| Transferência para outra Instituição |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Validar_Conhecimento">
+                        15| Validação de conhecimento(especificar) |Coordenação do Cursos
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Reajuste">
+                        16| Reajuste |CCA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="Recorrigir_Prova">
+                        17| Recorreção de Prova  |Coordenação do Curso
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="AUXILIO_TRANSPORTE">
+                        18| AUXÍLIO - Transporte |Serviço social
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="AUXILIO_MORADIA">
+                        19| AUXÍLIO - Moradia |Serviço social
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="AUXILIO_OCULOS">
+                        20| AUXÍLIO - Óculos |Serviço social
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="AUXILIO_PAIS_MAES">
+                        21| AUXÍLIO - Pais e Mães |Serviço social
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ACAO" value="AUXILIO_TRANSPORTE">
+                        22| Outros(especificar) |
+                    </label>
+                    <br>
                 </fieldset>
 
-                
+                <label for="especificar">ESPECIFICAR</label> 
+                <br>
+                <textarea name="especificacao" id="especificar" cols="100" rows="2"></textarea>
+                <br>
+                <label for="justificar">JUSTIFICAR</label>
+                <br>
+                <textarea name="justificacao" id="justificar" cols="100" rows="2"></textarea>
             </fieldset>
 
+            <fieldset>
+                <label>
+                    <input type="checkbox" name="" required>
+                    DECLARO CONHECER O REGIMENTO DESTA IFE, BEM COMO O PRAZO NECESSÁRIO À TRAMITAÇÃO DO PROCESSO
+                </label>
+                <br>
+
+                <label>
+                    REQUERENTE(ASS. LEGÍVEL)
+                    <input type="text" name="assinatura_requerente" required>
+                </label>
+                <br>
+
+                <label>
+                    FUNCIONÁRIO(ASS. LEGÍVEL)
+                    <input type="text" name="assinatura_funcionario" required>
+                    
+                </label>
+                <br>
+                <label>
+                    CEDRO-CE,
+                    <input type="date">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <h2>VISTO(COORDENAÇÃO DE ASSUNTOS ESTUDANTIS)</h2>
+
+                <label>
+                    <input type="radio" name="chave_armario" value="NAO_DEVE">
+                    O requerente NÃO deve chave do armário
+                </label>
+                <br>
+
+                <label>
+                    <input type="radio" name="chave_armario" value="DEVE">
+                    O requerente deve chave do armário
+                </label>
+                <br>
+
+                <label>
+                    Responsável(ass. Legível)
+                    <input type="text" name="assinatura_funcionario" required>
+                </label>
+
+                <hr>
+                <h2>VISTO(BIBLIOTECA)</h2>
+
+                <label>
+                    <input type="radio" name="livros" value="NAO_DEVE">
+                    O requerente NÃO deve livros na biblioteca
+                </label>
+                <br>
+
+                <label>
+                    <input type="radio" name="livros" value="DEVE">
+                    O requerente deve livros na biblioteca
+                </label>
+                <br>
+
+                <label>
+                    Responsável(ass. Legível)
+                    <input type="text" name="assinatura_funcionario" required>
+                </label>
+            </fieldset>
+
+            <hr>
+            <!-- Não aguentei deixar o botão pequeno -->
+            <input type="submit" value="Enviar Requerimento" style="font-size: 15px; padding: 5px 10px;">
         </form>
 
     </main>
